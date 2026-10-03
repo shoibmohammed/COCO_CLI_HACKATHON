@@ -1,0 +1,12 @@
+{
+  "project": "MFG Predictive Maintenance & OEE Command Center",
+  "release_tag": "v7.0.0-20260826_191415",
+  "snowflake_account": "",
+  "streamlit_object": "PM_OEE_DB.CORE.MFG_PM_COMMAND_CENTER",
+  "runtime": "Snowflake Warehouse Runtime / Anaconda Channel",
+  "python_version": "3.11",
+  "query_warehouse": "PM_OEE_WH",
+  "phases_executed": 12,
+  "all_phases_passed": true,
+  "timestamp": "20260826_191415"
+}

@@ -1,0 +1,209 @@
+{
+  "project": "MFG Predictive Maintenance & OEE Command Center",
+  "version": "7.0.0-release",
+  "python": "3.11",
+  "total_artifacts": 50,
+  "artifacts": {
+    "streamlit_app.py": {
+      "size": 26147,
+      "sha256": "f78005c15e61348e6be1bf684fd96458f4e9106387080fb2a7ffe364865558e5"
+    },
+    "config.py": {
+      "size": 3315,
+      "sha256": "d78b2b8186972639998b7a36d5e08cc0217626d0fa95bb54e65306a00aefc00d"
+    },
+    "snowflake_connection.py": {
+      "size": 5434,
+      "sha256": "a5e8eca0598f352f62f5148f9f8d5d3e0b39d357c644aa3b62f03fc4a2054bca"
+    },
+    "requirements.txt": {
+      "size": 246,
+      "sha256": "6f1ef85f3d0a4b54ce4b1a76769d8b26469ec4b18ba566d494e99c7781f2cde4"
+    },
+    "marketplace_selected_listing.json": {
+      "size": 670,
+      "sha256": "573aa9319a9e98f6c7f900d783212d8864514d66cb6ddac7f8ed49e0d7cac1a1"
+    },
+    "pages/__init__.py": {
+      "size": 17,
+      "sha256": "bebdea33036f0810b3a4eb6f42370b5f640f1cd7a42134ebca76a1aa7cd0d17a"
+    },
+    "pages/command_center.py": {
+      "size": 25009,
+      "sha256": "4091232797a5bef2893fbc21c6dbf77c921e83b99f0a17397eb227fc162ebe36"
+    },
+    "pages/alerts.py": {
+      "size": 12309,
+      "sha256": "76b44de5b9de9a9cec1c5f0cbe0865beb93fcc0c4814cd8b87e5877b042db6c6"
+    },
+    "pages/machine_intelligence.py": {
+      "size": 60044,
+      "sha256": "83852fd6324ae68e48bf6df3b6600514c6ff9b38473e3ecd064c0a5f8b26789c"
+    },
+    "pages/what_if_simulator.py": {
+      "size": 5099,
+      "sha256": "2978f20f73095b3127395b195754b866c35bf00869f315db5cf1f48182641fca"
+    },
+    "pages/work_orders.py": {
+      "size": 31819,
+      "sha256": "2d5ec460fed13ecbb502a41305fe724c3b963d0becb34b8889f52b846b281f14"
+    },
+    "pages/ai_copilot.py": {
+      "size": 32442,
+      "sha256": "8e9bbfb3c8b1e84563d4ffa575ea4a9ee1a4fcd1928eae55801edd1b63108fbd"
+    },
+    "pages/supply_chain.py": {
+      "size": 29557,
+      "sha256": "9ef417c588706ef6892eaae3b78165cbe634bc9fd013d10e0019f45441f810ad"
+    },
+    "pages/system_status_page.py": {
+      "size": 1705,
+      "sha256": "e8bb901a64eb2f59828b1bbb9b5ad43a6a81ce16ff16987933c8a9de89cb298f"
+    },
+    "pages/reports.py": {
+      "size": 2558,
+      "sha256": "c9dfb085194b2fea9bef3f40604f2858d811c8bd52751e03ee261b3222c54d2e"
+    },
+    "pages/settings_page.py": {
+      "size": 1630,
+      "sha256": "313f765cd618a2ad96e4a8063b4d1c8487fb0fe98e1aca336b7e94708736e597"
+    },
+    "services/ai_guardrails.py": {
+      "size": 23582,
+      "sha256": "1ead55f4d6ca51d5ba149e24cf2b18c9668b092a4c6f8615f59ee55db0a6159a"
+    },
+    "services/document_service.py": {
+      "size": 8295,
+      "sha256": "25c5c867b4e3b6029cb651456ff285d2e7bb89af2444261a22b019f02f8cc8b1"
+    },
+    "services/email_notification_service.py": {
+      "size": 1894,
+      "sha256": "38ca204d510b9258f5a369d5bae408b6670f650d85814dbc3139529f6398eda0"
+    },
+    "services/email_provider.py": {
+      "size": 19748,
+      "sha256": "4ee2cbb732169b5e04b514c85cfe7a78a678d18d590d4818794db411a951778c"
+    },
+    "services/email_service.py": {
+      "size": 2899,
+      "sha256": "d815b812480b45030875842b702ac9a99d5608ecf174ec68bab5cebb9d3c946a"
+    },
+    "services/gemini_service.py": {
+      "size": 26790,
+      "sha256": "edb305b522ad439b53e4b9d4ac703ecfd326a432ae6408c49e036a901f5aa2ef"
+    },
+    "services/gmail_service.py": {
+      "size": 22503,
+      "sha256": "0905af2f601fb2d0035344ce80fd7c09778148b039243d7f134db0cc6724703b"
+    },
+    "services/jira_mcp_service.py": {
+      "size": 11239,
+      "sha256": "2f15aa751c9f3500014a55ed47905da448d53c8856e66e4bb707af9a8ac6b316"
+    },
+    "services/jira_queue_recovery.py": {
+      "size": 6398,
+      "sha256": "ffe9bd2cd7353eeb725e7afc7f18c1e1b5f74d905ca025687ed26f485306aac9"
+    },
+    "services/jira_queue_service.py": {
+      "size": 9610,
+      "sha256": "d1550adf09feee4defca7467304ceddb2218b6a0de112b25a3cdaf97c43ac3e0"
+    },
+    "services/jira_service.py": {
+      "size": 25714,
+      "sha256": "9a6ba1ffd949ad6f819dae2560bae00650ae00a383b56bc9ef9273f8de23514b"
+    },
+    "services/knowledge_service.py": {
+      "size": 22869,
+      "sha256": "70cbc6324b6be4197e6b49af4cfe6169995ad4787b1470a224e6c5715ce969b6"
+    },
+    "services/marketplace_agent.py": {
+      "size": 48676,
+      "sha256": "c7fa3e74bd7962f958895e3c69c84e52ba50970aadc70f6a6747e2a94e38d801"
+    },
+    "services/ml_service.py": {
+      "size": 20185,
+      "sha256": "b9195616c4b3a495310a545872121a5d702047501aec2379c35c71be280c9546"
+    },
+    "services/notification_service.py": {
+      "size": 37656,
+      "sha256": "432e05d8910344b3132f09b06cd9db5f3059aa0994f91d8348046ec247dd796f"
+    },
+    "services/notification_templates.py": {
+      "size": 7896,
+      "sha256": "2f55c62d5f041265f5c216e649b524096e4636dbdfef3005dc2ded9dd664fbf2"
+    },
+    "services/outlook_notification_service.py": {
+      "size": 7272,
+      "sha256": "44e8dab63a9082df5e9c35b068544ad207d7ef6e1c33ea88905124a85440d4e3"
+    },
+    "services/report_service.py": {
+      "size": 1519,
+      "sha256": "43c07878141a7d9873ec7cfa4fcbe2975bf4b08568a4d8297cb24958e132e8e5"
+    },
+    "services/scenario_service.py": {
+      "size": 14765,
+      "sha256": "fada6b0781d736abd9d3cc4da598055e2a17104af5e0cda0f62cb2b37a19f95f"
+    },
+    "services/slack_service.py": {
+      "size": 7057,
+      "sha256": "bdee95592f17771de8cdaaba2ddf75335abc4b69e1d5a0810c5aea7a5a87aa03"
+    },
+    "services/snowflake_email_provider.py": {
+      "size": 5998,
+      "sha256": "61a702b7e4114880427b17c5136aac841bbab1422c56a869cc05edded4ab5fe3"
+    },
+    "services/universal_email_service.py": {
+      "size": 11178,
+      "sha256": "8f96773b0eb6e1acaf9bc068d655e8801a04cb5fd071c5ba218340cdf878332c"
+    },
+    "services/weather_service.py": {
+      "size": 10454,
+      "sha256": "75ea30d6bfd63fccc81bfda22248d3348e853adac57097cafdda1b054dc4c581"
+    },
+    "components/asset_images.py": {
+      "size": 1608925,
+      "sha256": "bd9e09dd437e4dd5a4edc774c69bcc57a8b4f0a31861051a162fbdc1a4b949fe"
+    },
+    "components/business_impact.py": {
+      "size": 2124,
+      "sha256": "f39d2dd2f4851e22fa7d649685f0ca0995bd96317df3ecbb382a42dca6787cd2"
+    },
+    "components/diagnosis_card.py": {
+      "size": 7692,
+      "sha256": "ed22d706bc033efdcdc647941d3ff5968f5884251993c9930214a768c358af46"
+    },
+    "components/header.py": {
+      "size": 7123,
+      "sha256": "f67c8f6ffa14aba9af71c53be7f45791a5b308ecff0cdbaf6fac79135654a01b"
+    },
+    "components/kpi_card.py": {
+      "size": 5655,
+      "sha256": "7d018fd045c0f532b7fdcb2234de6ab5fd126a3dc6e85cd276d92eb476072475"
+    },
+    "components/printable_report.py": {
+      "size": 5171,
+      "sha256": "32cb48bd33f2da48372e6c17e6ab1ea7a0fd3b4d7573a46061a9f0500c0925f3"
+    },
+    "components/system_status.py": {
+      "size": 29730,
+      "sha256": "78f6500a7677754c7363618c214ec325821412411159f8b2007fe0561c92388d"
+    },
+    "components/universal_email_composer.py": {
+      "size": 8561,
+      "sha256": "ac9ab1d5ee6c2acbf5187898e2ac090a64ac3c9858941e524c78d45ac3d5ddac"
+    },
+    "data/maintenance_manuals/Precision_Mill_Bearing_Manual.txt": {
+      "size": 1124,
+      "sha256": "4ae96abf794552d73472092566616e010a324630a818adb8964f41e045cd81b9"
+    },
+    "data/maintenance_manuals/Coolant_System_SOP.txt": {
+      "size": 738,
+      "sha256": "7b592fb73ca808958c88004d78b4ceacd9f25db0f4b0f3dcc778e12e8f28d5f1"
+    },
+    "data/maintenance_manuals/Spindle_Drive_Belt_SOP.txt": {
+      "size": 686,
+      "sha256": "d04730a85b72e84485f410dbb3aae3e3fa75074807f3734ac32585f4195119eb"
+    }
+  },
+  "timestamp": "20260827_081852"
+}

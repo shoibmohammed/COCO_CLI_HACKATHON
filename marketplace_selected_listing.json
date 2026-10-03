@@ -1,0 +1,13 @@
+{
+  "database": "SNOWFLAKE_PUBLIC_DATA_FREE",
+  "schemas": ["PUBLIC_DATA_FREE"],
+  "title": "Snowflake Public Data (Free)",
+  "provider": "Snowflake Public Data Products",
+  "global_name": "GZTSZ290BV255",
+  "kind": "IMPORTED DATABASE",
+  "origin": "HFB60520.SNOWFLAKE_MANAGED$PUBLIC_GCP_ME_CENTRAL2.MARKETPLACE_PUBLIC_DATA_FREE",
+  "installed_at": "2026-08-13T09:54:19.146-07:00",
+  "verified": true,
+  "is_real_marketplace": true,
+  "ingestion_filter": "Manufacturing-relevant commodity prices (Copper, Aluminum, Nickel, Iron Ore, Metals Index, Energy, Natural Gas) + Industrial Production (Steel, Aluminum, Machinery, Motor Vehicles, Capacity Utilization, Mining)"
+}

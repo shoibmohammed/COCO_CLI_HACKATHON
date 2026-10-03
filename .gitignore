@@ -1,0 +1,53 @@
+# ==============================================================================
+# Git Ignore Configuration — MFG Predictive Maintenance V7
+# ==============================================================================
+
+# Private Environment & Secret Files (NEVER TRACK IN PUBLIC GITHUB)
+.env
+.env.*
+!.env.example
+credentials.json
+!credentials.example.json
+token.json
+*.token
+*.pem
+*.key
+secrets/
+.streamlit/secrets.toml
+!.streamlit/secrets.toml.example
+connection.toml
+config.toml
+local_jira_worker/.env
+!local_jira_worker/.env.example
+local_jira_worker/.jira_demo.json
+!local_jira_worker/.jira_demo.json.example
+local_jira_worker/.worker.pid
+
+# Python Compilation & Virtual Environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+env/
+
+# IDE & Editor Artifacts
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+*.bak
+*.tmp
+
+# Snowflake & Deployment Logs / Temporary Files
+.snowflake/
+release_logs/
+*.log
+docs/
+archive/
+
+# OS Specific
+.DS_Store
+Thumbs.db

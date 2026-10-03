@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  mfg-command-center:
+    build: .
+    container_name: mfg_pm_command_center
+    ports:
+      - "8501:8501"
+    environment:
+      - SNOWFLAKE_ACCOUNT=${SNOWFLAKE_ACCOUNT}
+      - SNOWFLAKE_USER=${SNOWFLAKE_USER}
+      - SNOWFLAKE_PASSWORD=${SNOWFLAKE_PASSWORD}
+      - SNOWFLAKE_ROLE=${SNOWFLAKE_ROLE:-ACCOUNTADMIN}
+      - SNOWFLAKE_WAREHOUSE=${SNOWFLAKE_WAREHOUSE:-PM_OEE_WH}
+      - SNOWFLAKE_DATABASE=${SNOWFLAKE_DATABASE:-PM_OEE_DB}
+      - SNOWFLAKE_SCHEMA=${SNOWFLAKE_SCHEMA:-CORE}
+    volumes:
+      - .:/app
+    restart: unless-stopped
