@@ -1,0 +1,14 @@
+CNC Coolant System — Troubleshooting SOP
+
+Failure signature
+A coolant-flow problem usually causes temperature to rise while vibration remains near baseline. Pressure may fall as the pump or filter becomes restricted.
+
+Diagnostic steps
+Check coolant level, filter differential pressure, pump current, pressure at the supply manifold, and return flow. Do not replace a spindle bearing solely because of a thermal alert when vibration is stable.
+
+Corrective action
+If pump pressure is below the operating range, inspect the filter and pump. Replace COOLANT-PUMP-4KW when pump degradation is confirmed.
+
+Maintenance interval
+Inspect coolant filtration weekly and verify pump performance during the scheduled preventive maintenance window.
+

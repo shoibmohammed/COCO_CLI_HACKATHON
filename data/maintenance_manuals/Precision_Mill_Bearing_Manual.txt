@@ -1,0 +1,17 @@
+Precision Mill — Bearing Failure & Replacement Manual
+
+Failure signature
+Progressive bearing wear commonly appears as increasing spindle vibration followed by a thermal rise. A simultaneous increase in vibration and temperature is a high-confidence indicator of bearing degradation.
+
+Diagnostic thresholds
+Normal vibration is approximately 1.5–2.8 mm/s. Sustained vibration above 4.0 mm/s requires inspection. Vibration above 6.0 mm/s with a thermal rise should be treated as critical.
+
+Technician procedure
+1) Stop the machine under the approved lockout/tagout procedure. 2) Inspect bearing housing and lubrication. 3) Check spindle alignment. 4) Replace the bearing if raceway damage or excessive play is confirmed. 5) Verify vibration after restart.
+
+Replacement part
+For the HX precision spindle family, the approved replacement is SKF-6205-2RS. Standard lead time is 12 days unless local inventory is available.
+
+Historical pattern
+Previous Machine_03 failures showed a rising vibration trend followed by temperature escalation. Repair logs attributed the failures to insufficient lubrication and raceway fatigue.
+

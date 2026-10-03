@@ -1,0 +1,14 @@
+Spindle Drive — Belt & RPM Troubleshooting SOP
+
+Failure signature
+Belt tension drift can produce intermittent vibration and RPM oscillation. The thermal signal may remain normal during early degradation.
+
+Diagnostic steps
+Check belt tension, pulley alignment, belt wear, and spindle RPM stability under load. Compare current RPM against the rated spindle speed.
+
+Corrective action
+If belt tension is outside specification or the belt shows cracking or glazing, replace DRIVE-BELT-HX and verify spindle alignment.
+
+Historical pattern
+Machine_04 maintenance records show intermittent vibration caused by belt tension drift. The issue was resolved after belt replacement and alignment.
+
