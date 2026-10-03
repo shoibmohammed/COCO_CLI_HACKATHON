@@ -1,0 +1,87 @@
+-- ============================================================================
+-- MFG PREDICTIVE MAINTENANCE & OEE COMMAND CENTER
+-- DATABASE SCHEMA & OBJECT CHANGELOG
+-- Database: PM_OEE_DB | Schema: CORE
+-- ============================================================================
+
+-- ----------------------------------------------------------------------------
+-- VERSION 1.0 — Initial OT Telemetry & Real-Time Monitoring
+-- Date: 2026-02-15
+-- Objects Created:
+--   - TABLE SENSOR_READINGS (Raw high-frequency telemetry: vibration, temp, rpm, pressure, power)
+--   - VIEW/TABLE MACHINE_HEALTH_RT (Dynamic baseline & current operational status)
+--   - VIEW/TABLE OEE_METRICS_RT (Real-time Availability, Performance, Quality, OEE %)
+--   - VIEW/TABLE RISK_SCORES_RT (Statistical z-score outlier detection)
+-- Backward Compatibility: Foundation schema for all downstream services.
+-- ----------------------------------------------------------------------------
+
+-- ----------------------------------------------------------------------------
+-- VERSION 2.0 — Snowflake ML Anomaly Detection & Failure Classification
+-- Date: 2026-03-01
+-- Objects Created:
+--   - TABLE PM_TRAINING_DATA (288 time-series feature rows with 6-hour failure labeling)
+--   - MODEL PM_FAILURE_MODEL (Snowflake ML SNOWPARK_ML binary classification)
+--   - PROCEDURE REFRESH_ML_PREDICTIONS() (Inference procedure writing to RISK_SCORES_RT)
+-- Migration Notes: Upgraded statistical anomaly detection to probabilistic ML inference.
+-- ----------------------------------------------------------------------------
+
+-- ----------------------------------------------------------------------------
+-- VERSION 3.0 — Cortex AI & Document Grounding Architecture
+-- Date: 2026-03-20
+-- Objects Created:
+--   - TABLE MAINTENANCE_DOCUMENTS (Technical manuals, bearing specs, troubleshooting guides)
+--   - CORTEX SEARCH SERVICE (Optional semantic retrieval over maintenance documents)
+--   - STAGE MAINTENANCE_DOC_STAGE (Internal stage for PDF and Markdown technical assets)
+-- Fallback Architecture: Three-layer retrieval (Internal manuals -> Native Web Search -> LLM synthesis).
+-- ----------------------------------------------------------------------------
+
+-- ----------------------------------------------------------------------------
+-- VERSION 4.0 — Human-in-the-Loop Work Order Governance
+-- Date: 2026-04-10
+-- Objects Created:
+--   - TABLE WORK_ORDERS (Governed state machine: DETECTED -> DIAGNOSED -> PENDING_APPROVAL -> APPROVED -> IN_PROGRESS -> COMPLETED)
+--   - TABLE SPARE_PARTS (ERP inventory levels, lead times, safety stocks, unit costs)
+--   - PROCEDURE APPROVE_WORK_ORDER(wo_id, approver) (Enforces managerial governance)
+-- ----------------------------------------------------------------------------
+
+-- ----------------------------------------------------------------------------
+-- VERSION 5.0 — Atlassian MCP & Enterprise Jira Integration
+-- Date: 2026-05-01
+-- Objects Created:
+--   - TABLE JIRA_INTEGRATION_QUEUE (Decoupled queue for asynchronous ticket creation)
+--   - TABLE JIRA_TICKET_AUDIT (Audit trail recording issue key, URL, project, timestamp)
+--   - TABLE JIRA_WORKER_HEARTBEAT (Bi-directional health monitoring for local and cloud worker)
+--   - PROCEDURE ENQUEUE_JIRA_TICKET(wo_id)
+-- ----------------------------------------------------------------------------
+
+-- ----------------------------------------------------------------------------
+-- VERSION 6.0 — Real Snowflake Marketplace External Supply Chain Ingestion
+-- Date: 2026-06-15
+-- Objects Created:
+--   - TABLE RAW_MARKETPLACE_DATA (Raw external JSON/variant data from public data listings)
+--   - TABLE MARKETPLACE_CONFORMED_DATA (Standardized commodity prices: Copper, Nickel, Aluminum, Industrial Indices)
+--   - TABLE MARKETPLACE_PART_SUPPLIER_ENRICHMENT (Lead-time risk, alternative suppliers, material inflation)
+--   - TABLE MARKETPLACE_INGESTION_AUDIT (Ingestion timestamps, row counts, SHA-256 idempotency hash)
+--   - PROCEDURE INGEST_MARKETPLACE_DATA() (Idempotent MERGE pipeline)
+-- ----------------------------------------------------------------------------
+
+-- ----------------------------------------------------------------------------
+-- VERSION 7.0 — Autonomous Notifications & Model Drift Observability
+-- Date: 2026-07-20
+-- Objects Created:
+--   - TABLE NOTIFICATION_LOG (Audit log for Snowflake Email and Slack webhooks)
+--   - TABLE MODEL_DRIFT_LOG (Feature distribution tracking: mean, stddev, Wasserstein drift metric)
+--   - TASK RUN_PERIODIC_ALERT_DISPATCH (5-minute autonomous Snowflake background alert evaluation)
+--   - TASK RUN_ML_DRIFT_MONITOR (Daily background feature drift evaluation)
+-- ----------------------------------------------------------------------------
+
+-- ----------------------------------------------------------------------------
+-- VERSION 7.1 / 7.2 — Production Hardening & Global Enterprise SaaS UI
+-- Date: 2026-08-25 / 2026-08-26
+-- Enhancements:
+--   - Full 10-page light enterprise design system (eliminated all legacy dark panels)
+--   - In-row machine deep-dive actions [01]..[04] with Critical Machine_03 visual highlighting
+--   - Plotly chart standard (pure white background, dark high-contrast typography)
+--   - Snowflake Native Streamlit runtime compatibility layer (safe_rerun, Python 3.8 safe string formatting)
+--   - Automated 13-gate production release orchestrator (deploy_release.py)
+-- ----------------------------------------------------------------------------
